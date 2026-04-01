@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    container_name: debate-tools-prod
+    container_name: ${CONTAINER_NAME}
     volumes:
       - static_volume:/app/production_static
     expose:
